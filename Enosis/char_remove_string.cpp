@@ -16,5 +16,8 @@ int main()
 
         }
     }
-    cout<<str;
+    //str.erase(4,2);
+    cout<<str<<endl;
+    //return main();
+
 }

@@ -5,11 +5,11 @@ int main()
 {
     string str;
     cout<<"Enter sentence (small letter) : ";
-    cin>>str;
+    getline(cin,str);
 
     for(int i=0; i<str.length();i++)
     {
-        str[i]=str[i] - 'a' + 'A';
+        str[i]=str[i] -32;
     }
 
     cout<<endl<<"Output : "<<str;
@@ -17,9 +17,7 @@ int main()
     cout<<endl<<"Output : ";
     for(int i=0; i<str.length();i++)
     {
-       
-        cout<<str[i] - '0'<<" " ;
+        cout<<str[i]-0<<" " ;
     }
-
-    
+ 
 }

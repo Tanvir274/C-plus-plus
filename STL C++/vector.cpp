@@ -65,8 +65,8 @@ int main()
     }
     cout<<endl;
 
-    sort(vec.begin(),vec.end(),myfun);  //decending order sort
-
+    //sort(vec.begin(),vec.end(),myfun);  //decending order sort
+    sort(vec.begin(),vec.end(),greater<int>()); 
     cout<<endl;
     for(int i=0;i<s;i++)
     {
@@ -82,9 +82,5 @@ int main()
     {
         cout<<vec[i]<<" ";
     }
-
-    
-
-
 
 }

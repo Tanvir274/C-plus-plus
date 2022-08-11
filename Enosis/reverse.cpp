@@ -12,9 +12,14 @@ int main()
         vec.push_back(str[i]);
     }
 
-    for(int i=0;i<vec.size();i++)
+    // for(int i=0;i<vec.size();i++)
+    // {
+    //    cout<<vec[i];
+    // }
+
+    for(auto x : vec)
     {
-       cout<<vec[i];
+        cout<<x;
     }
 }
 

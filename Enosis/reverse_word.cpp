@@ -17,6 +17,8 @@ int main()
     int l=str.size();
     int t=0;
     int s=-1;
+
+    //transform(str.begin(),str.end(),str.begin(),::tolower);
     
 
     for(int i=0;i<l;i++)

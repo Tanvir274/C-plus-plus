@@ -6,7 +6,7 @@ int main()
     multimap<string,int>m;
     multimap<string,int>::iterator it;
 
-    m.insert(make_pair("Tanvir",01));
+    m.insert(make_pair("Tanvir",02));
     m.insert(make_pair("Tanim",05));
     m.insert(make_pair("Tania",10));
     m.insert(make_pair("Tareq",7));

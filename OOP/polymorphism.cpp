@@ -51,9 +51,6 @@ public:
 };
 
 
-
-
-
 int main()
 {
     shape *s;

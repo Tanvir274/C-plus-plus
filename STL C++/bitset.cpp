@@ -5,15 +5,15 @@ using namespace std;
 
 int main()
 {
-    bitset<8> b;
+    // bitset<8> b;
 
-    cout << b; // it all bit default initialization by 0;
+    // cout << b; // it all bit default initialization by 0;
 
-    b.set(); // for all bit initialization 1;
+    // b.set(); // for all bit initialization 1;
 
-    cout << endl << b;
+    // cout << endl << b;
 
-    b.reset(); // for all bit initialization 1;
+    // b.reset(); // for all bit initialization 1;
 
     bitset<length> s(15);
 

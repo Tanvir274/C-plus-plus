@@ -7,12 +7,12 @@ int main()
     file.open("enosis.txt",ios::out |ios::app);
 
     cout<<"Take 10 Integer: "<<endl;
-    int v;
+    string v;
 
     for(int i=0;i<10;i++)
     {
         cin>>v;
-        file<<v<<endl;
+        file<<v<<" ";
         
     }
     file.close();

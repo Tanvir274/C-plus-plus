@@ -63,9 +63,4 @@ int main()
         cout<<*its<<"\t";
     }
 
-   
-
-
-
-
 }
