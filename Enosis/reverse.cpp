@@ -17,9 +17,7 @@ int main()
     //    cout<<vec[i];
     // }
 
-    for(auto x : vec)
-    {
-        cout<<x;
-    }
+    reverse(str.begin(),str.end());
+    cout<<str;
 }
 

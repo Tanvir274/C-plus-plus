@@ -1,3 +1,3 @@
 string str="Bangladesh";
-    string s=str.substr(6, 2);
-    cout<<s;
+    str.insert(6,"love");
+    cout<<str;

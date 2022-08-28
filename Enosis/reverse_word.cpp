@@ -1,64 +1,98 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void trans(string str,int s,int e)
-{
-    for(int i=e;i>=s;i--)
-    {
-        cout<<str[i];
-    }
-    cout<<" ";
-}
+// void trans(string str,int s,int e)
+// {
+//     for(int i=e;i>=s;i--)
+//     {
+//         cout<<str[i];
+//     }
+//     cout<<" ";
+// }
+
+// int main()
+// {
+//     string str="Video provides a powerful way to help you prove your point.";
+
+//     int l=str.size();
+//     int t=0;
+//     int s=-1;
+
+//     //transform(str.begin(),str.end(),str.begin(),::tolower);
+    
+
+//     for(int i=0;i<l;i++)
+//     {
+//         if(s==-1)
+//         {
+//             s=i;
+//         }
+//         else if(str[i]==' ')
+//         {
+//             trans(str,s,s+t);
+
+//             //cout<<s<<" "<<s+t<<endl;
+//             s=-1;
+//             t=0;
+           
+//         }
+//         else if(i==l-1)
+//         {
+//             if(str[i]=='.')
+//             {
+//                 trans(str,s,s+t);
+//                 cout<<".";
+
+//             }
+//             else
+//             {
+//                 t++;
+//                 trans(str,s,s+t);
+
+
+//             }
+
+//         }
+//         else
+//         {
+//             t++;
+//         }
+      
+//     }
+
+    
+// }
 
 int main()
 {
-    string str="Video provides a powerful way to help you prove your point.";
+    string str="Video provides a powerful way to help you prove your point";
 
-    int l=str.size();
-    int t=0;
-    int s=-1;
+    int s=str.size();
 
-    //transform(str.begin(),str.end(),str.begin(),::tolower);
-    
+    list<char>ch;
 
-    for(int i=0;i<l;i++)
+
+    for(int i=0;i<s;i++)
     {
-        if(s==-1)
+        if(str[i]==' ' || i==(s-1))
         {
-            s=i;
-        }
-        else if(str[i]==' ')
-        {
-            trans(str,s,s+t);
-
-            //cout<<s<<" "<<s+t<<endl;
-            s=-1;
-            t=0;
-           
-        }
-        else if(i==l-1)
-        {
-            if(str[i]=='.')
+            if(i==(s-1))
             {
-                trans(str,s,s+t);
-                cout<<".";
-
+              ch.push_front(str[i]);
             }
-            else
+            
+            for(auto x: ch)
             {
-                t++;
-                trans(str,s,s+t);
-
-
+                cout<<x;
             }
+            cout<<" ";
+            ch.clear();
 
         }
         else
         {
-            t++;
-        }
-      
-    }
+            ch.push_front(str[i]);
 
-    
+        }
+   }
 }

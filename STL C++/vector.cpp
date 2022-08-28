@@ -18,6 +18,7 @@ int main()
     vec.push_back(2);
     vec.push_back(5);
     vec.push_back(56);
+    vec.pop_back();
 
     int s = vec.size();
     cout<<s<<endl;

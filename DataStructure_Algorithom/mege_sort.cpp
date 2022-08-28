@@ -3,7 +3,7 @@ using namespace std;
 
 void merge(int arr[],int left,int mid,int right)
 {
-    cout<<endl<<"3rd Yes";
+    //cout<<endl<<"3rd Yes";
     
     int  left_size,right_size;
 

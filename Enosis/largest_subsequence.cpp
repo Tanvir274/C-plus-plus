@@ -68,11 +68,31 @@ int main()
     string str="Video provides a powerful way to help you prove your point";
 
     int s=str.size();
+    int Max=0;
+
+    list<char>ch;
+
 
     for(int i=0;i<s;i++)
     {
+        if(str[i]==' ' || i==(s-1))
+        {
+            if(i==(s-1))
+            {
+              ch.push_front(str[i]);
+            }
+            int s=ch.size();
 
+            Max=max(Max,s);
+            ch.clear();
+
+        }
+        else
+        {
+            ch.push_front(str[i]);
+
+        }
     }
-
+    cout<<Max;
 
 }

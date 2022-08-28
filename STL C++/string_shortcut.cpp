@@ -33,10 +33,10 @@ int main()
     // str.erase(7,2);
     // cout<<str;
 
-    // string str="Bangladesh";
-    // //cout<<str.find("desh");
-    // int n=str.find("desh");
-    // cout<<n;
+    string str="Bangladesh";
+    //cout<<str.find("desh");
+    int n=str.find("desh");
+    cout<<n;
 
     // string str="Bangladesh";
     // str.insert(6,"love");
@@ -56,6 +56,8 @@ int main()
 
     // string str="Bangladesh";
     // transform(str.begin(),str.end(),str.begin(), ::toupper);
+    // cout<<str<<endl;
+    // reverse(str.begin(),str.end());
     // cout<<str<<endl;
     // transform(str.begin(),str.end(),str.begin(), ::tolower);
     // cout<<str<<endl;
